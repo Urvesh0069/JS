@@ -101,7 +101,6 @@
         </div>
         <div id="buttons" class="nav-buttons">
             <a href="./index.html" id="home" class="home-button">Home</a>
-            <!-- <a href="./form.html" id="form" class="form-button">Form</a> -->
         </div>
     </header>
 
@@ -113,34 +112,37 @@
                     <label for="title" class="form-label">News Title</label>
                     <input type="text" id="title" class="form-control" required>
                 </div>
+
                 <div class="mb-3">
-                    <label for="city" class="form-label">News City</label>
-                    <input type="text" id="city" class="form-control" required>
+                    <label for="category" class="form-label">Category</label>
+                    <select id="category" class="form-select" required>
+                        <option value="">Select Category</option>
+                        <option value="world-news">World News</option>
+                        <option value="national-news">National News</option>
+                        <option value="sport-news">Sport News</option>
+                        <option value="politics-news">Politics News</option>
+                    </select>
                 </div>
-                <div class="mb-3">
-                    <label for="state" class="form-label">News State</label>
-                    <input type="text" id="state" class="form-control" required>
-                </div>
-                <!-- New Date Field -->
-                <div class="mb-3">
-                    <label for="date" class="form-label">News Date</label>
-                    <input type="date" id="date" class="form-control" required>
-                </div>
+
                 <div class="mb-3">
                     <label for="content" class="form-label">News Content</label>
                     <textarea id="content" class="form-control" rows="5" required></textarea>
                 </div>
+
                 <div class="mb-3">
                     <label for="image" class="form-label">Upload Image</label>
                     <input type="file" id="image" class="form-control" accept="image/*" required>
                 </div>
+
+
                 <button type="submit" id="submitBtn" class="btn form_submit-btn">Submit</button>
             </form>
         </div>
     </div>
 
 </body>
-<script src="./index.js"></script>
+
+<script src="./form.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

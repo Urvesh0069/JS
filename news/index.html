@@ -25,90 +25,41 @@
 
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar Filters -->
-            <div class="col-md-3 sidebar mt-4">
-                <h4>Filters</h4>
+            <div class="col-md-3">
+                <div class="bg-light p-3 rounded shadow-sm">
+                    <h4 class="mb-3">Filters</h4>
 
-                <!-- Title Filter -->
-                <div class="mb-3">
-                    <label class="form-label">Title</label>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Select Title
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Title 1</a></li>
-                            <li><a class="dropdown-item" href="#">Title 2</a></li>
-                            <li><a class="dropdown-item" href="#">Title 3</a></li>
-                        </ul>
+                    <div class="mb-3">
+                        <label for="searchNews" class="form-label">Search News</label>
+                        <input type="text" id="search" class="form-control" placeholder="Search by title...">
                     </div>
-                </div>
 
-                <!-- City Filter -->
-                <div class="mb-3">
-                    <label class="form-label">City</label>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Select City
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">New York</a></li>
-                            <li><a class="dropdown-item" href="#">Los Angeles</a></li>
-                            <li><a class="dropdown-item" href="#">Chicago</a></li>
-                        </ul>
+                    <div class="mb-3">
+                        <label class="form-label">Category</label>
+                        <select id="categoryFilter" class="form-select">
+                            <option value="">All Categories</option>
+                            <option value="world-news">World News</option>
+                            <option value="national-news">National News</option>
+                            <option value="sport-news">Sport News</option>
+                            <option value="politics-news">Politics News</option>
+                        </select>
                     </div>
-                </div>
 
-                <!-- State Filter -->
-                <div class="mb-3">
-                    <label class="form-label">State</label>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Select State
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">California</a></li>
-                            <li><a class="dropdown-item" href="#">Texas</a></li>
-                            <li><a class="dropdown-item" href="#">Florida</a></li>
-                        </ul>
-                    </div>
+                    <button class="btn btn-primary w-100">Apply Filters</button>
                 </div>
-
-                <!-- Date Filter -->
-                <div class="mb-3">
-                    <label class="form-label">Select Date</label>
-                    <input type="date" class="form-control">
-                </div>
-
-                <!-- Apply Button -->
-                <button class="btn btn-primary w-100">Apply Filters</button>
             </div>
 
             <!-- News View -->
-            <div class="col-md-9 news-content">
-                <h2>Latest News</h2>
-                <div class="row row-cols-1 row-cols-md-2 g-4" >
-                    <div class="col" id="newsContainer">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">News Title 1</h5>
-                                <img src="" alt="">
-                                <h5 class="card-city"></h5>
-                                <h5 class="card-state"></h5>
-                                <h5 class="card-date"></h5>
-                                <p class="card-text">Short description of the news article. More details inside.</p>
-                            </div>
-                        </div>
-                    </div>
+             
+            <div class="col-md-9">
+                <div class="row" id="row-card">
+                    
                 </div>
             </div>
         </div>
 
 </body>
-<script src="./index.js"></script>
+<script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
