@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather by Location</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .weather {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button class="btn" id="go-btn">Show User Location Weather</button>
+        <p id="details">User location details</p>
+
+        <div class="weather">
+            <p class="city"></p>
+            <p class="description"></p>
+            <p class="speed"></p>
+            <p id="container"></p>
+            <p class="h-temp"></p>
+            <p class="l-temp"></p>
+            <p class="long"></p>
+            <p class="latt"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
