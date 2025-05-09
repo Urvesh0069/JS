@@ -1,0 +1,109 @@
+/* === Layout Base === */
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* === Sidebar styling === */
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+}
+
+.sidebar .nav-link {
+  color: #212529;
+  padding: 10px 15px;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar .nav-link.active {
+  background-color: #6f42c1;
+  color: #fff;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #e2e6ea;
+  color: #212529;
+}
+
+/* === Navbar styling === */
+.navbar {
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #212529;
+}
+
+.navbar .nav-link:hover {
+  color: #6f42c1;
+}
+
+/* Navbar Heading */
+.Navbar-heading {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* === Custom Button === */
+.btn-custom {
+  background-color: #6f42c1;
+  border-color: #6f42c1;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #59329a;
+  border-color: #59329a;
+  color: #fff;
+}
+
+/* === Expense Heading === */
+.Expense-heding {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* === Main Content === */
+.content {
+  flex-grow: 1;
+}
+
+/* === Summary Cards === */
+.summary-card {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+
+.summary-card h6 {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.summary-card h4 {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+/* === Chart Placeholder === */
+.chart-placeholder {
+  height: 300px;
+  border: 2px dashed #ced4da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  background-color: #f8f9fa;
+}
