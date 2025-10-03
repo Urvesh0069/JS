@@ -1,0 +1,89 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header start */
+.header {
+  height: 60px;
+  max-width: 100%;
+  background-color:rgb(82, 89, 82);
+  gap: 400px;
+}
+
+/* header end */
+
+.Title{
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#Login{
+  background-color: rgb(82, 89, 82);
+  box-shadow: 2px 2px 2px 2px silver;
+  color:  lightgrey;
+  height: 330px;
+  width: 260px;
+ 
+
+
+}
+
+.login-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+
+#email{
+  padding: 3px;
+
+}
+#password{
+  padding: 3px;
+}
+
+.textbox{
+  margin: 30px;
+}
+#textbox{
+  height: 35px;
+  width: 198px;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ---- */
+
+#success,
+#newuser,
+#alreday {
+  /* position: absolute;
+  top: 90px;
+  right: 650px; */
+  display: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: green;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#alreday {
+  color: red;
+  margin-bottom: 10px;
+}
+
+#success i,
+#alreday i {
+  padding-right: 5px;
+}

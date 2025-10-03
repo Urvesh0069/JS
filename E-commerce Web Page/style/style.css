@@ -1,0 +1,273 @@
+/* univarsal proparty start */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* universal proparty end */
+
+/* header start */
+.header {
+  height: 60px;
+  max-width: 1009%;
+  background-color: rgb(82, 89, 82);
+  gap: 400px;
+}
+
+/* header end */
+
+/* baner start */
+.img1 {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  margin: 0;
+}
+/* baner end */
+
+/* product Page start */
+.img {
+  height: 150px;
+  margin-bottom: 20px;
+  transition: transform 2s ease;
+}
+.img:hover {
+  transform: scale(1.1);
+}
+.title {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin: 2px;
+  padding: 0;
+}
+
+.price {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.rate {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border-radius: 0px;
+  height: 490px;
+  width: 300px;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 1.5px 1.5px 1.5px 1.5px silver;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 40px;
+}
+
+.BTNbuy {
+   border: none;
+color: lightgray;
+border-radius: 5px;
+  background-color: rgb(82, 89, 82) ;
+  margin-top: 10px;
+  height: 30px;
+  width: 95px;
+}
+
+.ImgDiv {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.TitleDiv {
+  /* height: 170px; */
+}
+
+.PriceDiv {
+  /* height: 50px; */
+}
+
+.RateDiv {
+  /* height: 50px; */
+}
+
+.BTNDiv {
+  display: flex;
+  justify-content: center;
+}
+.WishListDIV {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.AddToCart{
+  border: none;
+color: lightgray;
+border-radius: 5px;
+  background-color: rgb(82, 89, 82) ;
+  margin-top: 10px;
+  height: 32px;
+  width: 95px;
+}
+
+.CartDiv {
+  display: flex;
+  justify-content: center;
+}
+/* product page end */
+
+/* html product page for button style */
+.ButtonDIV {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#lth,
+#htl,
+#menswear {
+  height: 40px;
+  width: 100px;
+  background-color: rgb(82, 89, 82);
+  border: none;
+  color: lightgray;
+  border-radius: 3px;
+}
+
+#women,
+#beauty {
+  height: 40px;
+  width: 70px;
+  background-color: rgb(82, 89, 82);
+  border: none;
+  color: lightgray;
+  border-radius: 3px;
+}
+
+#fragrance {
+  height: 40px;
+  width: 90px;
+  background-color: rgb(82, 89, 82);
+  border: none;
+  color: lightgray;
+  border-radius: 3px;
+}
+
+#groceries,
+#furniture {
+  height: 40px;
+  width: 80px;
+  background-color: rgb(82, 89, 82);
+  border: none;
+  color: lightgray;
+  border-radius: 3px;
+}
+
+#girlNeccessary {
+  height: 40px;
+  width: 130px;
+  background-color: rgb(82, 89, 82);
+  border: none;
+  color: lightgray;
+  border-radius: 3px;
+}
+#all {
+  height: 40px;
+  width: 90px;
+  background-color: rgb(82, 89, 82);
+  border: none;
+  color: lightgray;
+  border-radius: 3px;
+}
+#search {
+  padding: 5px;
+}
+
+/* wish list page start */
+.cart-item {
+  display: flex;
+  justify-content: center;
+}
+.cart-item-img {
+  height: 150px;
+}
+
+.cart-item-details {
+  height: 400px;
+  width: 300px;
+  background-color: lightgray;
+  box-shadow: 2px 2px 2px silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cartTitle {
+  text-align: center;
+}
+.cartrPrice {
+  text-align: center;
+}
+
+.quantity {
+  text-align: center;
+}
+.remove-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.cartTotal {
+  width: 300px;
+  text-align: center;
+  background-color: lightgray;
+}
+.remove-item{
+  border: none;
+color: lightgray;
+border-radius: 5px;
+  background-color: rgb(82, 89, 82) ;
+  /* margin-top: 10px; */
+  height: 32px;
+  width: 70px;
+  margin: 0;
+  margin: auto;
+
+}
+
+.subTotal{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 10px;
+  
+}
+
+.decrease-quantity{
+  width: 28px;
+  border: none;
+  text-align: center;
+  color: lightgray;
+border-radius: 2px;
+  background-color: rgb(82, 89, 82) ;
+}
+.increase-quantity{
+  width: 28px;
+  border: none;
+  text-align: center;
+  color: lightgray;
+border-radius: 2px;
+  background-color: rgb(82, 89, 82) ;
+
+}
